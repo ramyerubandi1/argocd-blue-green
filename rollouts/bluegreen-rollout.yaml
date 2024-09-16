@@ -1,28 +1,26 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
-  name: bluegreen-demo
+  name: bluegreen-calculator
   labels:
-    app: bluegreen-demo
+    app: calculator-app
 spec:
   replicas: 3
   revisionHistoryLimit: 1
   selector:
     matchLabels:
-      app: bluegreen-demo
+      app: calculator-app
   template:
     metadata:
       labels:
-        app: bluegreen-demo
+        app: calculator-app
     spec:
       containers:
-      - name: bluegreen-demo
-        image: argoproj/rollouts-demo:blue
+      - name: calculator-app
+        image: 024848485298.dkr.ecr.us-west-2.amazonaws.com/microservicea:latest
         imagePullPolicy: Always
         ports:
-        - name: http
-          containerPort: 8080
-          protocol: TCP
+         - containerPort: 5000
         resources:
           requests:
             memory: 32Mi
