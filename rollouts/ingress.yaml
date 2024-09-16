@@ -16,6 +16,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: calculator-svc
+            name: bluegreen-svc
             port:
               number: 5002
