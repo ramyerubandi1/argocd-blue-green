@@ -28,5 +28,5 @@ spec:
   strategy:
     blueGreen:
       autoPromotionEnabled: false
-      activeService: bluegreen-demo
-      previewService: bluegreen-demo-preview
+      activeService: rollouts-bluegreen-active
+      previewService: rollouts-bluegreen-preview
