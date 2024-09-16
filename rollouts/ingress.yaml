@@ -16,6 +16,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: bluegreen-svc
+            name: rollouts-bluegreen-active
             port:
               number: 5002
