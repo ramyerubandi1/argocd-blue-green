@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: calculator-app
-        image: 024848485298.dkr.ecr.us-west-2.amazonaws.com/microservicea:latest
+        image: 024848485298.dkr.ecr.us-west-2.amazonaws.com/argo-updated-image:latest
         imagePullPolicy: Always
         ports:
          - containerPort: 5000
