@@ -16,6 +16,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: 
+            name: rollouts-bluegreen-preview
             port:
               number: 5000 
