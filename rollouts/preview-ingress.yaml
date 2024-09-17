@@ -18,4 +18,4 @@ spec:
           service:
             name: rollouts-bluegreen-preview
             port:
-              number: 5000 
+              number: 5002
